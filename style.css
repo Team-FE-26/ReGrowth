@@ -9,6 +9,7 @@
 * {
     margin : 0;
     padding: 0;
+    border-sizing: border-box ;
     font-family: "Poppins", sans-serif;
 }
 
@@ -107,3 +108,91 @@ body {
 .active-box:hover {
     color: #A4D0A4 !important;
 }
+
+/* -----------------Article----------------------- */
+.article-section{
+    width: 100%;
+}
+
+.article-section .section-content {
+    width: 85%;
+    margin: 20px auto;
+}
+
+.article-section .section-content .title { 
+width: 60%;
+text-align: center;
+margin: auto;
+}
+
+.article-section .section-content .title h2 {
+    font-size: 40px;
+    color: black;
+}
+
+.article-section .section-content .title p {
+    font-size: 18px;
+    color: black;
+    margin-top: 20px;
+
+}
+
+.article-section .section-content .wrapper-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+}
+
+.article-section .section-content .wrapper-cards .article-cards {
+    width: 100%;
+    background-color:#F4EAD5 ;
+    position: relative;
+}
+
+
+.article-section .section-content .wrapper-cards .article-cards img {
+    width: 100%;
+    height: auto;
+}
+
+.article-section .section-content .wrapper-cards .article-cards .article {
+    padding: 15px 20px;
+}
+
+.article-section .section-content .wrapper-cards .article-cards .article h4 {
+    font-size: 24px;
+    color: black;
+}
+.article-section .section-content .wrapper-cards .article-cards .article p{
+    font-size: 16px;
+    margin: 10px 0px;
+    color: black;
+    text-align: justify;
+}
+.article-section .section-content .wrapper-cards .article-cards a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #617A55;
+    padding: 8px 10px;
+    margin-left: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.article-section .section-content .wrapper-cards .article-cards .posted-date {
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #617A55;
+    padding: 6px 15px;
+    
+}
+
+.article-section .section-content .wrapper-cards .article-cards .posted-date p {
+    font-size: 12px;
+    color: #F4EAD5;
+    
+ }
