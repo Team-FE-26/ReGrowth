@@ -89,12 +89,14 @@ margin: auto;
     width: 100%;
     background-color:#F4EAD5 ;
     position: relative;
+    border-radius: 20px;
 }
 
 
 .article-section .section-content .wrapper-cards .article-cards img {
     width: 100%;
     height: auto;
+    border-top-right-radius: 10px;
 }
 
 .article-section .section-content .wrapper-cards .article-cards .article {
@@ -119,6 +121,8 @@ margin: auto;
     margin-left: 20px;
     color: white;
     margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px  rgba(0,0,0,0.25);
 }
 
 .article-section .section-content .wrapper-cards .article-cards .posted-date {
@@ -128,15 +132,18 @@ margin: auto;
     left: 0;
     display: inline-block;
     background-color: #617A55;
-    padding: 6px 15px;
+    padding: 1px 10px;
     
 }
 
 .article-section .section-content .wrapper-cards .article-cards .posted-date p {
     font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
     color: #F4EAD5;
-    
  }
+
 
  @media screen and (max-width:992px ) {
     .article-section .section-content .wrapper-cards{
