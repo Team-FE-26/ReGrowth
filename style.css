@@ -7,12 +7,6 @@
     font-family:'Poppins', sans-serif;
 }
 
-a{
-	text-decoration: none;
-	color: darkgreen;
-	font-weight: bold;
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -32,49 +26,56 @@ body {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-.login {
+.login-left {
     width: 400px;
 }
 
-form {
+.login-left .login-forms {
     width: 250px;
     margin: 60px auto;
 }
 
-h1 {
+.login-left .login-forms .login-title {
     margin: 20px;
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
 }
 
-hr {
+.login-left .login-hr {
     border-top: 2px solid green;
     margin-bottom: 25px;
 }
 
-p {
+.login-left .login-forms .forgot {
     text-align: center;
     margin: 10px;
 }
 
-.right img {
+.login-left .login-forms .forgot a{
+	text-decoration: none;
+	color: darkgreen;
+	font-weight: bold;
+}
+
+.login-right img {
     width: 450px;
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-form label {
+.login-left .login-forms label {
     display: block;
     font-size: 16px;
     font-weight: 600;
     padding: 5px;
 }
 
-input {
+.login-left .login-forms input {
     width: 100%;
     margin: 2px;
+    margin-bottom: 20px;
     border: none;
     outline: none;
     padding: 8px;
@@ -82,7 +83,7 @@ input {
     border: 1px solid gray;
 }
 
-button {
+.login-left .login-forms button {
     border: none;
     outline: none;
     padding: 8px;
@@ -95,15 +96,15 @@ button {
     background: #DAE2B6;
 }
 
-button:hover {
+.login-left .login-forms button:hover {
     background: #CCD6A6;
 }
 
-.right {
+.login-right {
   position: relative;
 }
 
-.right::before {
+.login-right::before {
   content: "ReGrowth";
   position: absolute;
   top: 50%;
@@ -114,8 +115,6 @@ button:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-
-
 @media (max-width: 880px) {
     .container {
         width: 100%;
@@ -124,21 +123,21 @@ button:hover {
         margin-right: 20px;
     }
 
-    form {
+    .login-left .login-forms {
         width: 300px;
         margin: 20px auto;
     }
 
-    .login {
+    .login-left {
         width: 400px;
         padding: 20px;
     }
 
-    button {
+    .login-left .login-forms button {
         width: 100%;
     }
 
-    .right img {
+    .login-right img {
         width: 100%;
         height: 100%;
     }
@@ -152,22 +151,21 @@ button:hover {
       box-shadow: none;
     }
     
-    .right {
+    .login-right {
       display: none;
     }
     
-    .login {
+    .login-left {
       width: 100%;
       padding: 20px;
     }
     
-    form {
+    .login-forms {
       width: 100%;
       margin: 20px auto;
     }
     
-    input,
-    button {
+    .login-left .login-forms input, .login-left .login-forms button {
       width: 100%;
     }
   }
