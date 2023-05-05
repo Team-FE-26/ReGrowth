@@ -9,7 +9,6 @@
 * {
     margin : 0;
     padding: 0;
-   
     font-family: "Poppins", sans-serif;
 }
 
@@ -168,7 +167,7 @@ margin: auto;
 
 /* -----------------Sub Article----------------------- */
 .sub-article-container {
-    width: 950px;
+    width: 80%;
     height: auto;
     padding: 20px;
     margin: 80px auto;
