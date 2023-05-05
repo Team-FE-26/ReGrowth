@@ -7,7 +7,7 @@
     font-family:'Poppins', sans-serif;
 }
 
-body {
+.login-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ body {
     background: #FFFBE9;
 }
 
-.container {
+.login-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -26,53 +26,53 @@ body {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-.login-left {
+.login-body .login-container .login-left {
     width: 400px;
 }
 
-.login-left .login-forms {
+.login-body .login-container .login-left .login-forms {
     width: 250px;
     margin: 60px auto;
 }
 
-.login-left .login-forms .login-title {
+.login-body .login-container .login-left .login-forms .login-title {
     margin: 20px;
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
 }
 
-.login-left .login-hr {
+.login-body .login-container .login-left .login-hr {
     border-top: 2px solid green;
     margin-bottom: 25px;
 }
 
-.login-left .login-forms .forgot {
+.login-body .login-container .login-left .login-forms .forgot {
     text-align: center;
     margin: 10px;
 }
 
-.login-left .login-forms .forgot a{
+.login-body .login-container .login-left .login-forms .forgot a{
 	text-decoration: none;
 	color: darkgreen;
 	font-weight: bold;
 }
 
-.login-right img {
+.login-body .login-container .login-right img {
     width: 450px;
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-.login-left .login-forms label {
+.login-body .login-container .login-left .login-forms label {
     display: block;
     font-size: 16px;
     font-weight: 600;
     padding: 5px;
 }
 
-.login-left .login-forms input {
+.login-body .login-container .login-left .login-forms input {
     width: 100%;
     margin: 2px;
     margin-bottom: 20px;
@@ -83,7 +83,7 @@ body {
     border: 1px solid gray;
 }
 
-.login-left .login-forms button {
+.login-body .login-container .login-left .login-forms button {
     border: none;
     outline: none;
     padding: 8px;
@@ -96,15 +96,15 @@ body {
     background: #DAE2B6;
 }
 
-.login-left .login-forms button:hover {
+.login-body .login-container .login-left .login-forms button:hover {
     background: #CCD6A6;
 }
 
-.login-right {
+.login-body .login-container .login-right {
   position: relative;
 }
 
-.login-right::before {
+.login-body .login-container .login-right::before {
   content: "ReGrowth";
   position: absolute;
   top: 50%;
@@ -116,56 +116,56 @@ body {
 }
 
 @media (max-width: 880px) {
-    .container {
+    .login-body.login-container {
         width: 100%;
         max-width: 750px;
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    .login-left .login-forms {
+    .login-body .login-container .login-left .login-forms {
         width: 300px;
         margin: 20px auto;
     }
 
-    .login-left {
+    .login-body .login-container .login-left {
         width: 400px;
         padding: 20px;
     }
 
-    .login-left .login-forms button {
+    .login-body .login-container .login-left .login-forms button {
         width: 100%;
     }
 
-    .login-right img {
+    .login-body .login-container .login-right img {
         width: 100%;
         height: 100%;
     }
 }
 
 @media (max-width: 480px) {
-    .container {
+    .login-body .login-container {
       max-width: 350px;
       margin: 0 auto;
       border-radius: 0;
       box-shadow: none;
     }
     
-    .login-right {
+    .login-body .login-container .login-right {
       display: none;
     }
     
-    .login-left {
+    .login-body .login-container .login-left {
       width: 100%;
       padding: 20px;
     }
     
-    .login-forms {
+    .login-body .login-container .login-forms {
       width: 100%;
       margin: 20px auto;
     }
     
-    .login-left .login-forms input, .login-left .login-forms button {
+    .login-body .login-container .login-left .login-forms input, .login-body .login-container .login-left .login-forms button {
       width: 100%;
     }
   }
