@@ -115,6 +115,17 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.login-body .login-container .login-left .signup {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.login-body .login-container .login-left .signup a{
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 @media (max-width: 880px) {
     .login-body.login-container {
         width: 100%;
