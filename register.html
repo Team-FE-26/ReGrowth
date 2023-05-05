@@ -6,16 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <script src="register.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div class="container">
-        <div class="register">
-            <form action="">
-                <h1>Register</h1>
-                <hr>
+<body class="register-body">
+    <div class="register-container">
+        <div class="register-left">
+            <form id="register-forms" class="register-forms" action="">
+                <h1 class="register-title">Register</h1>
+                <hr class="register-hr">
                 <label for="">Nama</label>
                 <input type="text" placeholder="Nama Lengkap">
                 <label for="">Email</label>
@@ -25,15 +24,16 @@
                 <label for="">Confirm Password</label>
                 <input type="password" placeholder="Confirm Password">
                 <button>Register</button>
-                <p>
-                    <a href="#">Already have an account? Login</a>
-                </p>
             </form>
+            <p class="signin">
+                Already have an account? <a href="#">Log in</a>
+            </p>
         </div>
-        <div class="right">
+        <div class="register-right">
             <img src="img/register.png" alt="">
         </div>
     </div>
+    <script src="register.js"></script>
 </body>
 
 </html>

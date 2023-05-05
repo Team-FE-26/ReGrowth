@@ -1,77 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
-a{
-	text-decoration: none;
-	color: darkgreen;
-	font-weight: bold;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
 }
 
-body {
+.register-body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-    font-family: "Poppins";
-    background: #CCD6A6;
+    background: #FFFBE9;
 }
 
-.container {
+.register-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
-    max-height: 510px;
+    max-width: 850px;
+    /* max-height: 510px; */
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-.register {
+.register-body .register-container .register-left {
     width: 500px;
-    height: 600px;
+    /* height: 600px; */
 }
 
-form {
+.register-body /.register-container .register-left .register-forms {
     width: 250px;
     margin: 60px auto;
 }
 
-h1 {
+.register-body .register-container .register-left .register-forms .register-title {
     margin: 20px;
     text-align: center;
     font-weight: bolder;
     text-transform: uppercase;
 }
 
-hr {
-    border-top: 2px solid #F4EAD5;
+.register-body .register-container .register-left .register-hr {
+    border-top: 2px solid green;
     margin-bottom: 25px;
 }
 
-p {
+.register-body .register-container .register-left .register-forms .login{
     text-align: center;
     margin: 10px;
 }
 
-.right img {
-    width: 350px;
+.register-body .register-container .register-left .login a{
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.register-body .register-container .register-right img {
+    width: 400px;
     height: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
 
-form label {
+.register-body .register-container .register-left .register-forms label {
     display: block;
     font-size: 16px;
     font-weight: 600;
     padding: 5px;
 }
 
-input {
-    width: 100%;
-    margin: 2px;
+.register-body .register-container .register-left .register-forms input {
+    width: 90%;
+    margin: 6px;
+    margin-bottom: 20px;
     border: none;
     outline: none;
     padding: 8px;
@@ -79,7 +86,7 @@ input {
     border: 1px solid gray;
 }
 
-button {
+.register-body .register-container .register-left .register-forms button {
     border: none;
     outline: none;
     padding: 8px;
@@ -89,124 +96,93 @@ button {
     cursor: pointer;
     margin-top: 20px;
     border-radius: 5px;
-    background: #DAE2B6
-    ;
+    background: #DAE2B6;
 }
 
-button:hover {
-    background: #DAE2B6
-    ;
+.register-body .register-container .register-left .register-forms button:hover {
+    background: #CCD6A6;
+    /* display: flex;
+    justify-content: center; */
 }
 
-.right {
+.register-body .register-container .register-right {
   position: relative;
 }
 
-.right::before {
-  content: "ReGrowth";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.register-body .register-container .register-right::before {
+    content: "ReGrowth";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+.register-body .register-container .register-left .signin {
+    text-align: center;
+    margin-top: 10px;
+    display: center;
 }
 
+.register-body .register-container .register-left .signin a{
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
 
-
-/* @media (max-width: 880px) {
-    .container {
+@media (max-width: 880px) {
+    .register-body.register-container {
         width: 100%;
         max-width: 750px;
         margin-left: 20px;
         margin-right: 20px;
     }
 
-    form {
+    .register-body .register-container .register-left .register-forms {
         width: 300px;
         margin: 20px auto;
     }
 
-    .register {
+    .register-body .register-container .register-left {
         width: 400px;
         padding: 20px;
     }
 
-    button {
+    .register-body .register-container .register-left .register-forms button {
         width: 100%;
     }
 
-    .right img {
+    .register-body .register-container .register-right img {
         width: 100%;
-        height: 100%;
-    } */
-/* } */
+        height: 100%;}
+    }
 
-/* @media screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      max-height: unset;
+@media (max-width: 480px) {
+    .register-body .register-container {
+      max-width: 350px;
+      margin: 0 auto;
+      border-radius: 0;
+      box-shadow: none;
     }
-    .register {
-      height: auto;
-      width: 100%;
-    }
-    .right img {
+    
+    .register-body .register-container .register-right {
       display: none;
     }
-  }
-   */
-
-
-@media only screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        max-height: none;
-}
-  
-    .right {
-        display: none;
+    
+    .register-body .register-container .register-left {
+      width: 100%;
+      padding: 20px;
     }
-  
-    .register {
-        width: 100%;
-        height: auto;
-        padding: 20px;
+    
+    .register-body .register-container .register-forms {
+      width: 100%;
+      margin: 20px auto;
     }
-  
-    .register h1 {
-        font-size: 30px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-  
-    .right::before {
-        font-size: 40px;
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    .register h1 {
-        font-size: 24px;
-    }
-  
-    input,button {
-        font-size: 14px;
-        padding: 6px;
-    }
-  
-    form label {
-        font-size: 14px;
-        padding: 3px;
-    }
-  
-    button {
-        margin-top: 10px;
-    }
-  
-    .right::before {
-        font-size: 30px;
+    
+    .register-body .register-container .register-left .register-forms input, .register-body .register-container .register-left .register-forms button {
+      width: 100%;
     }
   }
   
