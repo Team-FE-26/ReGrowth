@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+a{
+	text-decoration: none;
+	color: darkgreen;
+	font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: "Poppins";
+    background: #CCD6A6;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    max-height: 510px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.register {
+    width: 500px;
+    height: 600px;
+}
+
+form {
+    width: 250px;
+    margin: 60px auto;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+hr {
+    border-top: 2px solid #F4EAD5;
+    margin-bottom: 25px;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+.right img {
+    width: 350px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 252px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #DAE2B6
+    ;
+}
+
+button:hover {
+    background: #DAE2B6
+    ;
+}
+
+.right {
+  position: relative;
+}
+
+.right::before {
+  content: "ReGrowth";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* @media (max-width: 880px) {
+    .container {
+        width: 100%;
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    form {
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    .register {
+        width: 400px;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .right img {
+        width: 100%;
+        height: 100%;
+    } */
+/* } */
+
+/* @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      max-height: unset;
+    }
+    .register {
+      height: auto;
+      width: 100%;
+    }
+    .right img {
+      display: none;
+    }
+  }
+   */
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-height: none;
+}
+  
+    .right {
+        display: none;
+    }
+  
+    .register {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+  
+    .register h1 {
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+  
+    .right::before {
+        font-size: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .register h1 {
+        font-size: 24px;
+    }
+  
+    input,button {
+        font-size: 14px;
+        padding: 6px;
+    }
+  
+    form label {
+        font-size: 14px;
+        padding: 3px;
+    }
+  
+    button {
+        margin-top: 10px;
+    }
+  
+    .right::before {
+        font-size: 30px;
+    }
+  }
+  
