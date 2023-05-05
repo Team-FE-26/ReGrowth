@@ -18,14 +18,7 @@ loginForm.addEventListener('submit', function (event) {
     return;
   }
 
-  // Validasi panjang password minimal 8 karakter
-  if (passwordInput.value.length < 8) {
-    alert('Password harus memiliki panjang minimal 8 karakter!');
-    passwordInput.focus();
-    return;
-  }
-
   // Jika input username dan password valid, submit form
   alert('Login berhasil!');
-  loginForm.submit();
+  window.location.href = 'article.html';
 });
