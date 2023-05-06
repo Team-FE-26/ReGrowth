@@ -1,7 +1,7 @@
 const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
 const id = urlParams.get("id");
-const urlArticle = `https://64554778f803f345763f4637.mockapi.io/detail-article/detail-articles/`+id;
+const urlArticle = `https://64550855f803f34576385d7b.mockapi.io/detail-article/`+id;
 
 fetch(urlArticle, {
   method: "GET",
